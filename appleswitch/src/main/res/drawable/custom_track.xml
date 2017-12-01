@@ -10,5 +10,5 @@
         android:radius="5dp"/>
     <size
          android:width="80dp"
-         android:height="40dp" />
+         android:height="30dp" />
 </shape>
