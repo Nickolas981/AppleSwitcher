@@ -74,6 +74,15 @@ public class AppleSwitcher extends FrameLayout {
         });
     }
 
+    public void setEnabled(boolean b){
+        aSwitch.setEnabled(b);
+    }
+
+    public boolean isEnabled(){
+        return aSwitch.isEnabled();
+    }
+
+
     public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener listener) {
         listenerCollection.addOnCheckedChangeListener(listener);
     }
