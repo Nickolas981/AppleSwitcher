@@ -82,11 +82,11 @@ public class AppleSwitcher extends FrameLayout {
         return aSwitch.isChecked();
     }
 
-    public void setFirstText(String s){
+    public void setOnText(String s){
         first.setText(s);
     }
 
-    public void setSecondText(String s){
+    public void setOffText(String s){
         second.setText(s);
     }
 
