@@ -78,8 +78,8 @@ public class AppleSwitcher extends FrameLayout {
         aSwitch.setChecked( b);
     }
 
-    public boolean isEnabled(){
-        return aSwitch.isEnabled();
+    public boolean isChecked(){
+        return aSwitch.isChecked();
     }
 
     public void setFirstText(String s){

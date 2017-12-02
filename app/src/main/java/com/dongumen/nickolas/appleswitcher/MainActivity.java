@@ -1,5 +1,6 @@
 package com.dongumen.nickolas.appleswitcher;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
@@ -22,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "hello from main ", Toast.LENGTH_SHORT).show();
             }
         });
+//        appleSwitcher.setColor(Color.parseColor("#888888"));
     }
 }
