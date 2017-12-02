@@ -83,11 +83,11 @@ public class AppleSwitcher extends FrameLayout {
     }
 
     public void setOnText(String s){
-        first.setText(s);
+        second.setText(s);
     }
 
     public void setOffText(String s){
-        second.setText(s);
+        first.setText(s);
     }
 
     public void setColor(int color){
