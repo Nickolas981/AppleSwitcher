@@ -74,8 +74,8 @@ public class AppleSwitcher extends FrameLayout {
         });
     }
 
-    public void setEnabled(boolean b){
-        aSwitch.setEnabled(b);
+    public void setChecked(boolean b){
+        aSwitch.setChecked( b);
     }
 
     public boolean isEnabled(){
