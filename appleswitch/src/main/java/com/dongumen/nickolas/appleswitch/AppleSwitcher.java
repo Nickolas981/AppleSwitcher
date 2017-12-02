@@ -102,7 +102,11 @@ public class AppleSwitcher extends FrameLayout {
 
     private void refreshColor(){
         aSwitch.getTrackDrawable().setColorFilter(mainColor, PorterDuff.Mode.SRC_IN);
-
+        if (isChecked()){
+            second.setTextColor(mainColor);
+        }else{
+            first.setTextColor(mainColor);
+        }
     }
 
 
