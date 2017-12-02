@@ -58,7 +58,7 @@ public class AppleSwitcher extends FrameLayout {
 
     private void init() {
         listenerCollection = new OnCheckedChangeListenerCollection();
-        aSwitch.getTrackDrawable().setColorFilter(mainColor, PorterDuff.Mode.SRC_IN);
+        refreshColor();
         aSwitch.setOnCheckedChangeListener(listenerCollection);
         listenerCollection.addOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -80,6 +80,29 @@ public class AppleSwitcher extends FrameLayout {
 
     public boolean isEnabled(){
         return aSwitch.isEnabled();
+    }
+
+    public void setFirstText(String s){
+        first.setText(s);
+    }
+
+    public void setSecondText(String s){
+        second.setText(s);
+    }
+
+    public void setColor(int color){
+        mainColor = color;
+        refreshColor();
+    }
+
+    public void setColor(String color){
+        setColor(Color.parseColor(color));
+    }
+
+
+    private void refreshColor(){
+        aSwitch.getTrackDrawable().setColorFilter(mainColor, PorterDuff.Mode.SRC_IN);
+
     }
 
 
